@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pounds to Kilograms Weight Converter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/myStyle.css">
+  </head>
+
+
+
+
+
+    <body>
+        <div class="myStyle">
+         LaTex and Measure Converter <br/><br/>
+          <small><i>--- by Mr. Janardan Chavan --- </i></small>
+        </div>
+
+  <h2>Weight Converter</h2>
+  <p>Type a value in the Pounds field to convert the value to Kilograms:</p>
+
+  <p>
+    <label>Pounds</label>
+    <input id="inputPounds" type="number" placeholder="Pounds" oninput="weightConverter(this.value)" onchange="weightConverter(this.value)">
+  </p>
+  <p>Kilograms: <span id="outputKilograms"></span></p>
+
+  <br/><br/><br/>
+		<button class="button" style="vertical-align:middle; background-color: dodgerblue;">
+			<span><a href="Index.html">Back</a></span>
+		</button>
+
+		<div class="footer">
+			Copyright &copy;
+			<script>document.write(new Date().getFullYear())</script>
+			<i>Janardan Chavan</i> All Rights Reserved
+    </div>
+    
+  <script>
+  function weightConverter(valNum) {
+    document.getElementById("outputKilograms").innerHTML=valNum/2.2046;
+  }
+  </script>
+
+</body>
+</html>

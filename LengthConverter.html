@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Feet to Meters Length Converter</title>
+    <link rel="Stylesheet" type="text/css" href="css/myStyle.css">
+  </head>
+<body>
+
+  <div class="myStyle">
+    LaTex and Measure Converter <br/><br/>
+    <small><i>--- by Mr. Janardan Chavan --- </i></small>
+  </div>
+
+  <h2>Length Converter</h2>
+  <p>Type a value in the Feet field to convert the value to Meters:</p>
+
+  <p>
+    <label>Feet</label>
+    <input id="inputFeet" type="number" placeholder="Feet" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
+  </p>
+  <p>Meters: <span id="outputMeters"></span></p>
+
+  <br/><br/><br/>
+		<button class="button" style="vertical-align:middle; background-color: dodgerblue;">
+			<span><a href="Index.html">Back</a></span>
+		</button>
+
+		<div class="footer">
+			Copyright &copy;
+			<script>document.write(new Date().getFullYear())</script>
+			<i>Janardan Chavan</i> All Rights Reserved
+		</div>
+
+  <script>
+  function LengthConverter(valNum) {
+    document.getElementById("outputMeters").innerHTML=valNum/3.2808;
+  }
+  </script>
+</body>
+</html>
